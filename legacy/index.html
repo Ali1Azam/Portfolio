@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Md Ali Azam — Data Science Enthusiast, Web Developer & Problem Solver">
+    <title>Md Ali Azam | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Mouse Glow Follower -->
+    <div class="mouse-glow" id="mouseGlow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">MA<span class="accent">Portfolio</span></a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===================== HERO ===================== -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="hero-img-wrapper">
+                        <div class="hero-img-ring">
+                            <div class="hero-img-crop">
+                                <img src="profile.jpg" alt="Md Ali Azam" class="hero-img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1 class="hero-name">Md Ali <span class="neon-text">Azam</span></h1>
+                    <h2 class="hero-role">Data Science Enthusiast<span class="cursor">|</span></h2>
+
+                    <p class="hero-desc">
+                        Welcome to my digital playground! I am a Computer Science student passionate about solving 
+                        real-world problems using data analysis, modern web technologies, and turning raw data into 
+                        meaningful insights.
+                    </p>
+
+                    <div class="hero-tags">
+                        <span class="hero-tag">Python</span>
+                        <span class="hero-tag">C++</span>
+                        <span class="hero-tag">Java</span>
+                        <span class="hero-tag">Data Science</span>
+                        <span class="hero-tag">Pandas</span>
+                        <span class="hero-tag">HTML/CSS</span>
+                        <span class="hero-tag">MERN Stack</span>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-neon"><i class="fas fa-rocket"></i> View My Work</a>
+                        <a href="#contact" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up">About <span class="neon-text">Me</span></h2>
+                <div class="heading-line"></div>
+
+                <div class="about-grid fade-up">
+                    <!-- Left Sidebar -->
+                    <div class="about-sidebar">
+                        <div class="sidebar-card">
+                            <h3 class="sidebar-title"><i class="fas fa-bolt"></i> Quick Facts</h3>
+                            <div class="fact-item">
+                                <div class="fact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                                <div class="fact-info">
+                                    <span class="fact-label">Location</span>
+                                    <span class="fact-value">Punjab, India</span>
+                                </div>
+                            </div>
+                            <div class="fact-item">
+                                <div class="fact-icon"><i class="fas fa-graduation-cap"></i></div>
+                                <div class="fact-info">
+                                    <span class="fact-label">Education</span>
+                                    <span class="fact-value">B.Tech in Computer Science</span>
+                                </div>
+                            </div>
+                            <div class="fact-item">
+                                <div class="fact-icon"><i class="fas fa-chart-line"></i></div>
+                                <div class="fact-info">
+                                    <span class="fact-label">Focus</span>
+                                    <span class="fact-value">Data Science & Analysis</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-card">
+                            <h3 class="sidebar-title"><i class="fas fa-heart"></i> When I'm Not Coding</h3>
+                            <div class="hobby-item"><span class="hobby-icon">📊</span> Exploring Datasets</div>
+                            <div class="hobby-item"><span class="hobby-icon">📚</span> Reading</div>
+                            <div class="hobby-item"><span class="hobby-icon">🎵</span> Music</div>
+                        </div>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="about-main">
+                        <div class="about-block">
+                            <h3 class="about-block-title neon-text">My Journey</h3>
+                            <p>Hello! I'm <span class="neon-text fw-600">Md Ali Azam</span>, a passionate Computer Science student with a deep fascination for transforming complex data into elegant insights.</p>
+                            <p>My journey in tech began with curious exploration and has evolved into a focused expertise in Data Science, Data Analysis, and Web Development. I specialize in working with real-world datasets using Python, Pandas, NumPy, and Matplotlib.</p>
+                            <p>Currently, I am also learning Web Development and improving my problem-solving skills through competitive programming platforms like LeetCode.</p>
+                        </div>
+                        <div class="about-block">
+                            <h3 class="about-block-title neon-text">My Approach</h3>
+                            <p>I believe in creating technology solutions that are not just functional but meaningful. Every line of code I write aims to solve real problems and generate actionable insights. I value clean analysis, collaborative development, and continuous learning as the foundations of great work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up">Technical <span class="neon-text">Arsenal</span></h2>
+                <p class="section-sub fade-up">Technologies & tools in my toolkit</p>
+                <div class="heading-line"></div>
+
+                <div class="skill-tabs fade-up" id="skillTabs">
+                    <button class="skill-tab active" data-filter="all">All Skills</button>
+                    <button class="skill-tab" data-filter="programming">Programming</button>
+                    <button class="skill-tab" data-filter="datascience">Data Science</button>
+                    <button class="skill-tab" data-filter="frontend">Frontend</button>
+                    <button class="skill-tab" data-filter="tools">Tools</button>
+                </div>
+
+                <div class="skills-grid fade-up" id="skillsGrid">
+                    <!-- Programming -->
+                    <div class="skill-card" data-category="programming" data-glow="blue">
+                        <div class="skill-icon-wrap blue"><i class="devicon-c-plain"></i></div>
+                        <div class="skill-name">C</div>
+                        <span class="skill-cat-label">Programming</span>
+                    </div>
+                    <div class="skill-card" data-category="programming" data-glow="cyan">
+                        <div class="skill-icon-wrap cyan"><i class="devicon-cplusplus-plain"></i></div>
+                        <div class="skill-name">C++</div>
+                        <span class="skill-cat-label">Programming</span>
+                    </div>
+                    <div class="skill-card" data-category="programming" data-glow="orange">
+                        <div class="skill-icon-wrap orange"><i class="devicon-java-plain"></i></div>
+                        <div class="skill-name">Java</div>
+                        <span class="skill-cat-label">Programming</span>
+                    </div>
+                    <div class="skill-card" data-category="programming datascience" data-glow="green">
+                        <div class="skill-icon-wrap green"><i class="devicon-python-plain"></i></div>
+                        <div class="skill-name">Python</div>
+                        <span class="skill-cat-label">Programming</span>
+                    </div>
+
+                    <!-- Data Science -->
+                    <div class="skill-card" data-category="datascience" data-glow="purple">
+                        <div class="skill-icon-wrap purple"><i class="devicon-pandas-plain"></i></div>
+                        <div class="skill-name">Pandas</div>
+                        <span class="skill-cat-label">Data Science</span>
+                    </div>
+                    <div class="skill-card" data-category="datascience" data-glow="cyan">
+                        <div class="skill-icon-wrap cyan"><i class="devicon-numpy-plain"></i></div>
+                        <div class="skill-name">NumPy</div>
+                        <span class="skill-cat-label">Data Science</span>
+                    </div>
+                    <div class="skill-card" data-category="datascience" data-glow="magenta">
+                        <div class="skill-icon-wrap magenta"><i class="devicon-matplotlib-plain"></i></div>
+                        <div class="skill-name">Matplotlib</div>
+                        <span class="skill-cat-label">Data Science</span>
+                    </div>
+                    <div class="skill-card" data-category="datascience" data-glow="pink">
+                        <div class="skill-icon-wrap pink"><i class="fas fa-chart-pie"></i></div>
+                        <div class="skill-name">Seaborn</div>
+                        <span class="skill-cat-label">Data Science</span>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skill-card" data-category="frontend" data-glow="orange">
+                        <div class="skill-icon-wrap orange"><i class="devicon-html5-plain"></i></div>
+                        <div class="skill-name">HTML</div>
+                        <span class="skill-cat-label">Frontend</span>
+                    </div>
+                    <div class="skill-card" data-category="frontend" data-glow="blue">
+                        <div class="skill-icon-wrap blue"><i class="devicon-css3-plain"></i></div>
+                        <div class="skill-name">CSS</div>
+                        <span class="skill-cat-label">Frontend</span>
+                    </div>
+                    <div class="skill-card" data-category="frontend" data-glow="yellow">
+                        <div class="skill-icon-wrap yellow"><i class="devicon-javascript-plain"></i></div>
+                        <div class="skill-name">JavaScript</div>
+                        <span class="skill-cat-label">Frontend</span>
+                    </div>
+                    <div class="skill-card" data-category="frontend" data-glow="cyan">
+                        <div class="skill-icon-wrap cyan"><i class="devicon-react-original"></i></div>
+                        <div class="skill-name">React</div>
+                        <span class="skill-cat-label">Frontend</span>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card" data-category="tools" data-glow="orange">
+                        <div class="skill-icon-wrap orange"><i class="devicon-git-plain"></i></div>
+                        <div class="skill-name">Git & GitHub</div>
+                        <span class="skill-cat-label">Tools</span>
+                    </div>
+                    <div class="skill-card" data-category="tools" data-glow="green">
+                        <div class="skill-icon-wrap green"><i class="devicon-nodejs-plain"></i></div>
+                        <div class="skill-name">Node.js</div>
+                        <span class="skill-cat-label">Tools</span>
+                    </div>
+                    <div class="skill-card" data-category="tools" data-glow="green">
+                        <div class="skill-icon-wrap green"><i class="devicon-mongodb-plain"></i></div>
+                        <div class="skill-name">MongoDB</div>
+                        <span class="skill-cat-label">Tools</span>
+                    </div>
+                    <div class="skill-card" data-category="tools" data-glow="green">
+                        <div class="skill-icon-wrap green"><i class="fas fa-file-excel"></i></div>
+                        <div class="skill-name">Excel</div>
+                        <span class="skill-cat-label">Tools</span>
+                    </div>
+                    <div class="skill-card" data-category="tools" data-glow="yellow">
+                        <div class="skill-icon-wrap yellow"><i class="fas fa-chart-area"></i></div>
+                        <div class="skill-name">Power BI</div>
+                        <span class="skill-cat-label">Tools</span>
+                    </div>
+                    <div class="skill-card" data-category="tools" data-glow="cyan">
+                        <div class="skill-icon-wrap cyan"><i class="devicon-mysql-plain"></i></div>
+                        <div class="skill-name">MySQL</div>
+                        <span class="skill-cat-label">Tools</span>
+                    </div>
+                    <div class="skill-card" data-category="tools" data-glow="purple">
+                        <div class="skill-icon-wrap purple"><i class="devicon-express-original"></i></div>
+                        <div class="skill-name">Express.js</div>
+                        <span class="skill-cat-label">Tools</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PROJECTS ===================== -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up">Featured <span class="neon-text">Projects</span></h2>
+                <div class="heading-line"></div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 — MERN Stack -->
+                    <div class="project-card fade-up">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Project Screenshot — Replace this image</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="project-type">MERN STACK</span>
+                                <span class="project-date">2025</span>
+                            </div>
+                            <h3 class="project-title">Full-Stack MERN Web Application</h3>
+                            <p class="project-org">Personal Project</p>
+                            <ul class="project-bullets">
+                                <li>Built a full-stack web application using MongoDB, Express.js, React, and Node.js (MERN stack)</li>
+                                <li>Implemented RESTful API endpoints with Express.js and MongoDB for CRUD operations and data management</li>
+                                <li>Designed a responsive, dynamic frontend with React featuring component-based architecture and state management</li>
+                            </ul>
+                            <div class="project-techs">
+                                <span>MongoDB</span><span>Express.js</span><span>React</span><span>Node.js</span><span>REST API</span>
+                            </div>
+                            <a href="https://github.com/AliAzam" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card fade-up">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Project Screenshot — Replace this image</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="project-type">DATA ANALYSIS</span>
+                                <span class="project-date">Apr 2025</span>
+                            </div>
+                            <h3 class="project-title">Static Public Transport Analysis of Delhi using GTFS Data</h3>
+                            <p class="project-org">Personal Project</p>
+                            <ul class="project-bullets">
+                                <li>Created a data analysis project using GTFS datasets to explore Delhi's public transport network and identify operational patterns</li>
+                                <li>Performed EDA to examine route popularity, stop density, trip durations, and weekday service distributions</li>
+                                <li>Applied data cleaning, feature extraction, and visualization techniques using Python, NumPy, Pandas, Matplotlib, and Seaborn</li>
+                            </ul>
+                            <div class="project-techs">
+                                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+                            </div>
+                            <a href="https://github.com/AliAzam" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card fade-up">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Project Screenshot — Replace this image</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="project-type">DATA ANALYSIS</span>
+                                <span class="project-date">Apr 2025</span>
+                            </div>
+                            <h3 class="project-title">Pollution Data Analysis using Excel</h3>
+                            <p class="project-org">Personal Project</p>
+                            <ul class="project-bullets">
+                                <li>Developed an Excel-based project to analyze and visualize air quality data focusing on pollutants like PM2.5 and PM10</li>
+                                <li>Cleaned and transformed AQI datasets using pivot tables, charts, and conditional formatting to uncover seasonal and geographic patterns</li>
+                                <li>Applied trendlines and moving averages to forecast pollution levels and support data-driven environmental insights</li>
+                            </ul>
+                            <div class="project-techs">
+                                <span>Microsoft Excel</span><span>Data Cleaning</span><span>Data Visualization</span>
+                            </div>
+                            <a href="https://github.com/AliAzam" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card fade-up">
+                        <div class="project-img-wrap">
+                            <div class="project-img-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Project Screenshot — Replace this image</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <div class="project-top">
+                                <span class="project-type">WEB DEVELOPMENT</span>
+                                <span class="project-date">Oct 2023</span>
+                            </div>
+                            <h3 class="project-title">Drought Awareness Website</h3>
+                            <p class="project-org">Personal Project</p>
+                            <ul class="project-bullets">
+                                <li>Developed an informative web platform on drought awareness using HTML and CSS, with responsive design and structured layouts</li>
+                                <li>Created visually appealing sections with animations, icons, and organized content to explain drought causes, impacts, and prevention</li>
+                                <li>Enhanced usability through intuitive navigation, clean typography, and mobile-friendly design for seamless cross-device access</li>
+                            </ul>
+                            <div class="project-techs">
+                                <span>HTML</span><span>CSS</span><span>Responsive Design</span>
+                            </div>
+                            <a href="https://github.com/AliAzam" target="_blank" class="project-link-btn"><i class="fab fa-github"></i> View on GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== EDUCATION ===================== -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up"><i class="fas fa-graduation-cap"></i> <span class="neon-text">Education</span></h2>
+                <div class="heading-line"></div>
+
+                <div class="timeline">
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">Lovely Professional University</h3>
+                                    <p class="timeline-subtitle">Punjab, India</p>
+                                </div>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Since August 2023</span>
+                            </div>
+                            <p class="timeline-degree">Bachelor of Technology – Computer Science & Engineering</p>
+                            <p class="timeline-score"><i class="fas fa-star"></i> CGPA: 6.88</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-up">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-card glass-card">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-title">S.S.S.S.S Gurukulam</h3>
+                                    <p class="timeline-subtitle">Jharkhand, India</p>
+                                </div>
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Mar 2021 – Mar 2022</span>
+                            </div>
+                            <p class="timeline-degree">Intermediate – PCM</p>
+                            <p class="timeline-score"><i class="fas fa-star"></i> Percentage: 65%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== TRAINING ===================== -->
+        <section id="training" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up"><i class="fas fa-chalkboard-teacher"></i> <span class="neon-text">Training</span></h2>
+                <div class="heading-line"></div>
+
+                <div class="photo-entry-grid">
+                    <div class="photo-entry-card fade-up">
+                        <div class="photo-entry-img-wrap">
+                            <!-- Replace with your training photo -->
+                            <div class="photo-entry-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Training Photo — Replace this</span>
+                            </div>
+                        </div>
+                        <div class="photo-entry-body">
+                            <div class="photo-entry-top">
+                                <span class="photo-entry-type">TRAINING</span>
+                                <span class="photo-entry-date"><i class="fas fa-calendar-alt"></i> Jun 2023 – Jul 2024</span>
+                            </div>
+                            <h3 class="photo-entry-title">Data Structures Algorithms Training</h3>
+                            <p class="photo-entry-org"><i class="fas fa-building"></i> Cipher Schools</p>
+                            <ul class="photo-entry-bullets">
+                                <li>Gained hands-on experience in implementing core algorithms such as sorting, searching, recursion, and basic problem-solving patterns</li>
+                                <li>Practiced competitive programming concepts by optimizing time and space complexity, improving logical thinking</li>
+                                <li>Learned and applied STL along with key data structures including arrays, linked lists, stacks, queues, trees, and graphs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== EXTRACURRICULAR ===================== -->
+        <section id="extracurricular" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up"><i class="fas fa-users"></i> <span class="neon-text">Extracurricular</span></h2>
+                <div class="heading-line"></div>
+
+                <div class="photo-entry-grid">
+                    <div class="photo-entry-card fade-up">
+                        <div class="photo-entry-img-wrap">
+                            <!-- Replace with your activity photo -->
+                            <div class="photo-entry-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Activity Photo — Replace this</span>
+                            </div>
+                        </div>
+                        <div class="photo-entry-body">
+                            <div class="photo-entry-top">
+                                <span class="photo-entry-type">LEADERSHIP</span>
+                                <span class="photo-entry-date"><i class="fas fa-calendar-alt"></i> Since Feb 2025</span>
+                            </div>
+                            <h3 class="photo-entry-title">Event Manager</h3>
+                            <p class="photo-entry-org"><i class="fas fa-building"></i> Arambh Club, Division of Student Organization</p>
+                        </div>
+                    </div>
+
+                    <div class="photo-entry-card fade-up">
+                        <div class="photo-entry-img-wrap">
+                            <!-- Replace with your activity photo -->
+                            <div class="photo-entry-placeholder">
+                                <i class="fas fa-image"></i>
+                                <span>Activity Photo — Replace this</span>
+                            </div>
+                        </div>
+                        <div class="photo-entry-body">
+                            <div class="photo-entry-top">
+                                <span class="photo-entry-type">LEADERSHIP</span>
+                                <span class="photo-entry-date"><i class="fas fa-calendar-alt"></i> Feb 2024 – May 2025</span>
+                            </div>
+                            <h3 class="photo-entry-title">Vice-President</h3>
+                            <p class="photo-entry-org"><i class="fas fa-building"></i> Zillion Team L&T Club, Centre of Professional Enhancement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CERTIFICATES ===================== -->
+        <section id="certificates" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up"><i class="fas fa-award"></i> <span class="neon-text">Certificates</span></h2>
+                <div class="heading-line"></div>
+
+                <div class="cert-grid">
+                    <div class="cert-card fade-up">
+                        <div class="cert-img-wrap">
+                            <!-- Replace with your certificate image -->
+                            <div class="cert-img-placeholder">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificate Image — Replace this</span>
+                            </div>
+                        </div>
+                        <div class="cert-body">
+                            <h3 class="cert-title">Introduction to Machine Learning</h3>
+                            <p class="cert-org">NPTEL</p>
+                            <span class="cert-date">Oct 2025</span>
+                        </div>
+                    </div>
+                    <!-- Add more certificate cards here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== ACHIEVEMENTS ===================== -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up">Achievements & <span class="neon-text">CP</span></h2>
+                <div class="heading-line"></div>
+
+                <div class="achieve-grid">
+                    <div class="achieve-card fade-up">
+                        <div class="achieve-icon"><i class="fas fa-trophy"></i></div>
+                        <h3>DSA Problem Solving</h3>
+                        <p>Solved <strong>230+</strong> DSA problems across platforms like LeetCode and GeeksforGeeks, strengthening problem-solving and algorithmic thinking skills.</p>
+                    </div>
+                    <div class="achieve-card fade-up">
+                        <div class="achieve-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Competitive Programming</h3>
+                        <p>Active on <strong>LeetCode</strong> and <strong>GeeksforGeeks</strong>. Regularly practicing algorithmic problems, Data Structures, and improving logical thinking.</p>
+                    </div>
+                    <div class="achieve-card fade-up">
+                        <div class="achieve-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>Real-World Projects</h3>
+                        <p>Successfully completed multiple data science projects using real datasets, built analytical dashboards and complex data visualizations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-heading fade-up">Let's <span class="neon-text">Connect</span></h2>
+                <div class="heading-line"></div>
+
+                <div class="contact-grid fade-up">
+                    <a href="mailto:mdaliazam22a@gmail.com" class="contact-card">
+                        <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                        <span class="contact-label">Email</span>
+                        <strong>mdaliazam22a@gmail.com</strong>
+                    </a>
+                    <a href="tel:+919102935140" class="contact-card">
+                        <div class="contact-icon-box"><i class="fas fa-phone"></i></div>
+                        <span class="contact-label">Phone</span>
+                        <strong>+91-9102935140</strong>
+                    </a>
+                    <a href="https://linkedin.com/in/md-ali-azam" target="_blank" class="contact-card">
+                        <div class="contact-icon-box"><i class="fab fa-linkedin-in"></i></div>
+                        <span class="contact-label">LinkedIn</span>
+                        <strong>LinkedIn Profile</strong>
+                    </a>
+                    <a href="https://github.com/AliAzam" target="_blank" class="contact-card">
+                        <div class="contact-icon-box"><i class="fab fa-github"></i></div>
+                        <span class="contact-label">GitHub</span>
+                        <strong>github.com/AliAzam</strong>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#hero" class="logo footer-logo">MA<span class="accent">Portfolio</span></a>
+            <p class="footer-quote">"Building solutions through code, data, and continuous learning."</p>
+            <div class="footer-socials">
+                <a href="https://github.com/AliAzam" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/md-ali-azam" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:mdaliazam22a@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <div class="footer-line"></div>
+            <p class="footer-copy">&copy; <span id="yr"></span> Md Ali Azam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
