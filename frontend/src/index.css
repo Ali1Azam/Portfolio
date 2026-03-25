@@ -288,6 +288,20 @@ img { max-width: 100%; display: block; }
   box-shadow: 0 0 20px rgba(255, 0, 229, 0.25);
 }
 
+.btn-cv {
+  background: transparent;
+  color: #0088ff;
+  border: 2px solid #0088ff;
+  box-shadow: 0 0 15px rgba(0, 136, 255, 0.2);
+}
+.btn-cv:hover {
+  background: rgba(0, 136, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 136, 255, 0.4), 0 0 60px rgba(0, 136, 255, 0.15);
+  transform: translateY(-2px);
+  color: #fff;
+  border-color: #00cfff;
+}
+
 /* ============ HEADINGS ============ */
 .section-heading {
   font-size: 2.6rem; text-align: center; margin-bottom: 0.3rem;
