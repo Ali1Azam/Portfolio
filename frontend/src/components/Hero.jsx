@@ -65,7 +65,7 @@ const Hero = () => {
 
           <div className="hero-cta">
             <a href="#projects" className="btn btn-neon"><i className="fas fa-rocket"></i> View My Work</a>
-            <a href="/assets/cv-md-ali-azam.png" download="CV_Md_Ali_Azam.png" className="btn btn-cv"><i className="fas fa-download"></i> Download CV</a>
+            <a href="/assets/cv-md-ali-azam.pdf" download="CV_Md_Ali_Azam.pdf" className="btn btn-cv"><i className="fas fa-download"></i> Download CV</a>
             <a href="#contact" className="btn btn-outline"><i className="fas fa-paper-plane"></i> Contact Me</a>
           </div>
         </div>

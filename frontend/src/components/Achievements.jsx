@@ -11,7 +11,7 @@ const Achievements = () => {
           <div className="achieve-card fade-up">
             <div className="achieve-icon"><i className="fas fa-trophy"></i></div>
             <h3>DSA Problem Solving</h3>
-            <p>Solved <strong>230+</strong> DSA problems across platforms like LeetCode and GeeksforGeeks, strengthening problem-solving and algorithmic thinking skills.</p>
+            <p>Solved <strong>250+</strong> DSA problems across platforms like LeetCode and GeeksforGeeks, strengthening problem-solving and algorithmic thinking skills.</p>
           </div>
           <div className="achieve-card fade-up">
             <div className="achieve-icon"><i className="fas fa-laptop-code"></i></div>

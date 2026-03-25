@@ -22,7 +22,12 @@ const Skills = () => {
     { name: 'Excel', category: 'tools', icon: 'fas fa-file-excel', color: 'green' },
     { name: 'Power BI', category: 'tools', icon: 'fas fa-chart-area', color: 'yellow' },
     { name: 'MySQL', category: 'tools', icon: 'devicon-mysql-plain', color: 'cyan' },
-    { name: 'Express.js', category: 'tools', icon: 'devicon-express-original', color: 'purple' }
+    { name: 'Express.js', category: 'tools', icon: 'devicon-express-original', color: 'purple' },
+    { name: 'DSA', category: 'tools programming', icon: 'fas fa-brain', color: 'cyan' },
+    { name: 'Leadership', category: 'soft', icon: 'fas fa-users-cog', color: 'cyan' },
+    { name: 'Problem Solving', category: 'soft', icon: 'fas fa-lightbulb', color: 'yellow' },
+    { name: 'Teamwork', category: 'soft', icon: 'fas fa-user-friends', color: 'green' },
+    { name: 'Management', category: 'soft', icon: 'fas fa-tasks', color: 'orange' }
   ];
 
   const handleFilter = (cat) => setFilter(cat);
@@ -31,6 +36,7 @@ const Skills = () => {
     if (catStr.includes('programming')) return 'Programming';
     if (catStr.includes('datascience')) return 'Data Science';
     if (catStr.includes('frontend')) return 'Frontend';
+    if (catStr.includes('soft')) return 'Soft Skill';
     return 'Tools';
   };
 
@@ -42,13 +48,13 @@ const Skills = () => {
         <div className="heading-line"></div>
 
         <div className="skill-tabs fade-up">
-          {['all', 'programming', 'datascience', 'frontend', 'tools'].map(cat => (
+          {['all', 'programming', 'datascience', 'frontend', 'tools', 'soft'].map(cat => (
             <button 
               key={cat}
               className={`skill-tab ${filter === cat ? 'active' : ''}`}
               onClick={() => handleFilter(cat)}
             >
-              {cat === 'all' ? 'All Skills' : cat === 'datascience' ? 'Data Science' : cat.charAt(0).toUpperCase() + cat.slice(1)}
+              {cat === 'all' ? 'All Skills' : cat === 'datascience' ? 'Data Science' : cat === 'soft' ? 'Soft Skills' : cat.charAt(0).toUpperCase() + cat.slice(1)}
             </button>
           ))}
         </div>
