@@ -44,7 +44,7 @@ const Contact = () => {
             <h3 className="contact-sub-heading">Get in Touch</h3>
             <p className="contact-desc">Feel free to reach out to me for any questions, opportunities, or just to say hi!</p>
             <div className="contact-grid">
-              <a href="mailto:mdaliazam122@gmail.com" className="contact-card">
+              <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mdaliazam122@gmail.com" target="_blank" rel="noopener noreferrer" className="contact-card">
                 <div className="contact-icon-box"><i className="fas fa-envelope"></i></div>
                 <span className="contact-label">Email</span>
                 <strong>mdaliazam122@gmail.com</strong>
@@ -59,10 +59,10 @@ const Contact = () => {
                 <span className="contact-label">LinkedIn</span>
                 <strong>LinkedIn Profile</strong>
               </a>
-              <a href="https://github.com/AliAzam" target="_blank" rel="noopener noreferrer" className="contact-card">
+              <a href="https://github.com/Ali1Azam" target="_blank" rel="noopener noreferrer" className="contact-card">
                 <div className="contact-icon-box"><i className="fab fa-github"></i></div>
                 <span className="contact-label">GitHub</span>
-                <strong>github.com/AliAzam</strong>
+                <strong>github.com/Ali1Azam</strong>
               </a>
             </div>
           </div>

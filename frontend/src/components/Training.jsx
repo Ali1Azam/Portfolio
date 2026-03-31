@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Training = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   return (
     <section id="training" className="section">
       <div className="container">
@@ -11,7 +13,7 @@ const Training = () => {
 
         <div className="photo-entry-grid">
           <div className="photo-entry-card fade-up">
-            <div className="photo-entry-img-wrap">
+            <div className="photo-entry-img-wrap" style={{ cursor: 'pointer' }} onClick={() => setSelectedImage('/assets/training/dsa-cipher.jpg')}>
               <img src="/assets/training/dsa-cipher.jpg" alt="Data Structures Algorithms Training Certificate" className="photo-entry-img" />
             </div>
             <div className="photo-entry-body">
@@ -29,6 +31,15 @@ const Training = () => {
             </div>
           </div>
         </div>
+
+        {selectedImage && (
+          <div className="cert-modal-backdrop" onClick={() => setSelectedImage(null)}>
+            <div className="cert-modal-content" onClick={(e) => e.stopPropagation()}>
+              <button className="cert-modal-close" onClick={() => setSelectedImage(null)}>&times;</button>
+              <img src={selectedImage} alt="Training Certificate Full View" />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

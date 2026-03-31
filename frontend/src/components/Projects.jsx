@@ -13,7 +13,7 @@ const Projects = () => {
         'Designed a responsive, dynamic frontend with React featuring component-based architecture and state management'
       ],
       techs: ['MongoDB', 'Express.js', 'React', 'Node.js', 'REST API'],
-      link: 'https://github.com/AliAzam',
+      link: 'https://github.com/Ali1Azam/BeautyWellnessWebsite',
       image: '/assets/projects/project1-mern.png'
     },
     {
@@ -27,7 +27,7 @@ const Projects = () => {
         'Applied trendlines and moving averages to forecast pollution levels and support data-driven environmental insights'
       ],
       techs: ['Microsoft Excel', 'Data Cleaning', 'Data Visualization'],
-      link: 'https://github.com/AliAzam',
+      link: 'https://github.com/Ali1Azam/airqualityindex',
       image: '/assets/projects/project2-excel.png'
     },
     {
@@ -41,7 +41,7 @@ const Projects = () => {
         'Applied data cleaning, feature extraction, and visualization techniques using Python, NumPy, Pandas, Matplotlib, and Seaborn'
       ],
       techs: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'Seaborn'],
-      link: 'https://github.com/AliAzam',
+      link: 'https://github.com/Ali1Azam/Delhi-Transport-Analysis',
       image: '/assets/projects/project3-gtfs.jpg'
     },
     {
@@ -55,7 +55,7 @@ const Projects = () => {
         'Enhanced usability through intuitive navigation, clean typography, and mobile-friendly design for seamless cross-device access'
       ],
       techs: ['HTML', 'CSS', 'Responsive Design'],
-      link: 'https://github.com/AliAzam',
+      link: 'https://github.com/Ali1Azam/drought',
       image: '/assets/projects/project4-drought.png'
     }
   ];

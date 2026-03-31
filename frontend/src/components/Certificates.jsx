@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Certificates = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
   const certificatesData = [
     {
       title: 'Introduction to Machine Learning',
@@ -93,7 +95,7 @@ const Certificates = () => {
         <div className="cert-grid">
           {certificatesData.map((cert, i) => (
             <div key={i} className="cert-card fade-up">
-              <div className="cert-img-wrap">
+              <div className="cert-img-wrap" style={{ cursor: 'pointer' }} onClick={() => setSelectedImage(cert.image)}>
                 <img src={cert.image} alt={cert.title} />
               </div>
               <div className="cert-body">
@@ -104,6 +106,15 @@ const Certificates = () => {
             </div>
           ))}
         </div>
+
+        {selectedImage && (
+          <div className="cert-modal-backdrop" onClick={() => setSelectedImage(null)}>
+            <div className="cert-modal-content" onClick={(e) => e.stopPropagation()}>
+              <button className="cert-modal-close" onClick={() => setSelectedImage(null)}>&times;</button>
+              <img src={selectedImage} alt="Certificate Full View" />
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );
